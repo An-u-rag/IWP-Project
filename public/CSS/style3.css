@@ -958,8 +958,13 @@
         min-height: 200px;
         min-width: 100%;
     }
+    .carousel-caption3-box {
+        position: relative;
+        top:50px;
+    }
     .carousel-caption3-box h2{
-        font-size: 8vh;
+        top:30px;
+        font-size: 7vh;
     }
 
     .forumsContent ul {
@@ -1573,6 +1578,23 @@
         display:none;
     }
 
+    .carousel-caption h5{
+        line-break: none;
+        white-space:nowrap;
+        overflow: hidden;
+        animation: typing 2s forwards; 
+        border-right: none;
+   
+           
+    }
+
+    @keyframes typing {
+        0% { width:0% }
+        100% { width:100% }
+      }
+     
+
+
     @media (max-width: 768px) {
         .flex-container {
             display: block;
@@ -1663,18 +1685,24 @@
     }
     .carousel-caption3-box{
         position: inherit;
-        top: 100px;
+        top: 40px;
         /* width: 350px; */
     }
     .carousel-caption3 h1{
-        font-size: 8vw;
+        font-size: 3vh;
     }
+   
     .carousel-caption3 a{
-        font-size: 12vw;
+        font-size: 5vh;
     }
     .carousel-caption3-box h2{
-        font-size: 5vh;
+        font-size: 4vh;
         color: ivory;
+    }
+    .carousel-caption3-box button{
+       
+        font-size: 14px;
+
     }
     .new-topnewsheader {
         height: 10vh;
@@ -2632,6 +2660,18 @@
     .container ul a li .card{
         background-color: rgb(43, 43, 43);
     }
+    
+    .carousel-caption h5{          
+        line-break: none;
+        white-space:normal;
+        overflow:hidden;
+        animation: none;
+        font-size: 14px;
+        transition: none;
+
+        
+    }
+
   
 
 }
