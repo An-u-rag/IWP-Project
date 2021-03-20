@@ -898,7 +898,7 @@ figure {
 }
 
 body {
-    background-image: url("/images/newsbg.jpg");
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -931,7 +931,7 @@ body {
         display: none;
     }
     body {
-        background: url('/images/poster.png');
+        background: url('/images/blackBGnewMobile.png');
         background-size: cover;
     }
 }
@@ -1360,6 +1360,7 @@ article {
 }
 
 .forumcardcolumn {
+    display:block;
     float: right;
     width: 30%;
     padding: 0 10px;

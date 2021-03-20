@@ -189,7 +189,7 @@
 
     .carousel-caption {
         position: absolute;
-        top: 50%;
+        top: 47%;
         transform: translateY(-50%);
     }
 
@@ -489,6 +489,10 @@
         cursor: pointer;
         width: 100%;
         font-size: 18px;
+    }
+    .carousel-indicators{
+        position: fixed;
+        top:90%;
     }
 
     .card button:hover {
@@ -817,7 +821,7 @@
     }
 
     body {
-        background-image: url("/images/newsbg.jpg");
+        background-color:black;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -953,6 +957,9 @@
         align-items: center;
         min-height: 200px;
         min-width: 100%;
+    }
+    .carousel-caption3-box h2{
+        font-size: 8vh;
     }
 
     .forumsContent ul {
@@ -1536,19 +1543,21 @@
     .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #464646;
-        width: 100px;
+        background-color: #1b1b1b;
+        width: 80px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.432);
         z-index: 1;
     }
 
     .dropdown-content a {
         color: black;
-        font-size: 10px;
+        font-size: 1.7vh;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-        text-align: left;
+        text-align: center;
+        font-family: Poppins;
+       
     }
 
     .dropdown-content a:hover {
@@ -1606,7 +1615,11 @@
 
     }
     .carousel-caption{
-        top:57%;
+        top:47%;
+    }
+    .carousel-caption h5{
+        font-size:1.8vh;
+       
     }
     .carousel-indicators{
         position: fixed;
@@ -1626,7 +1639,7 @@
     .carousel-caption2-box{
         position: inherit;
         height: 1vw;
-        top:50%;
+        top:40%;
         margin-left:0;
     }
     .carousel-caption2 h1{
@@ -1637,8 +1650,8 @@
     }
     .carousel2-buttons{
         font-size: 2vh;
-        position: inherit;
-        top:280px;
+        top:270px;
+        position: fixed;        
         display: flex;
 
     }
@@ -1650,14 +1663,18 @@
     }
     .carousel-caption3-box{
         position: inherit;
-        top: 210px;
-        width: 350px;
+        top: 100px;
+        /* width: 350px; */
     }
     .carousel-caption3 h1{
         font-size: 8vw;
     }
     .carousel-caption3 a{
         font-size: 12vw;
+    }
+    .carousel-caption3-box h2{
+        font-size: 5vh;
+        color: ivory;
     }
     .new-topnewsheader {
         height: 10vh;
@@ -2065,6 +2082,10 @@
     }
     article .forumsContent ul li span{
         display:none;
+    }
+    .forumcardcolumn .forumcard{
+        float:center;      
+       
     }
     .forumrow .forumcardcolumn .forumcard{
         height: 50%;
