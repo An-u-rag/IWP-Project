@@ -1578,15 +1578,104 @@
         display:none;
     }
 
-    .carousel-caption h5{
+   
+    .navbar-nav .nav-item .nav-link{
+        text-decoration: none;   
+        display: inline-block;
+        position: relative;
+    }
+
+    .navbar-nav .nav-item .nav-link:after{
+        
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    .navbar-nav .nav-item .nav-link:hover:after{ 
+        width: 100%; 
+        left: 0; 
+      }
+
+
+
+      .carousel-caption .purposeBox{
+        height:auto;
+        width:100%;
+        box-sizing: border-box;
+        border: 10px solid rgba(255, 255, 255, 0.082);
+        box-shadow: #000000;
+        -webkit-tap-highlight-color: transparent;
+        position: relative;
+        z-index: 0;
+        transition: 1s;
+    
+      }
+    
+
+     .carousel-caption .purposeBox::before{
+        position: absolute;
+        background: #eee;
+        z-index: -1;
+        transition: 1s;
+        content: '';
+        left:0%;
+        bottom: 0%;
+      
+      }
+     .carousel-caption .purposeBox::after{
+        position: absolute;
+        background: #eee;
+        z-index: -1;
+        transition: 1s;
+        content: '';
+        right: 0%;  
+        bottom: 0%;    
+      }
+    
+      .carousel-caption .purposeBox::before {
+        height: 2%;
+        width: 10%;
+      }
+      
+      .carousel-caption .purposeBox::after {
+        top:0%;
+        height: 30%;
+        width: 0.5%;
+        
+      }
+           
+      .carousel-caption .purposeBox:hover::before {
+        width: 100%;      
+        background: transparent;
+      }
+      
+      .carousel-caption .purposeBox:hover::after {
+        height: 100%;
+        background: transparent;
+        
+      }
+      
+      .carousel-caption .purposeBox:hover {
+        background: rgba(248, 248, 248, 0.185);
+        border: 20px solid rgba(255, 255, 255, 0.171);
+        
+      }
+
+      .carousel-caption .purposeBox h5{
         line-break: none;
-        white-space:nowrap;
+        white-space:normal;
         overflow: hidden;
-        animation: typing 2s forwards; 
+        animation: none; 
         border-right: none;
    
            
-    }
+    } 
 
     @keyframes typing {
         0% { width:0% }
